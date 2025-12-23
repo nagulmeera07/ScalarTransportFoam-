@@ -65,7 +65,7 @@ In this case passive scalar is Temperature
 
 We base the tutorial on an existing `shockTube` case. Key files to edit are:
 
-- `0/T` (or whichever scalar field file you use in place of `T`)  
+- `0/T` (or whichever scalar field file you use in place of `φ`)  
   - Defines initial scalar field φ (the central box set to 1, rest set to 0). Geometry is from -5, 5 then region of -0.5 to 0.5 set to Temperature value 1.
 - `0/U`  
   - Defines the velocity field. Set to zero for pure diffusion, set to a constant nonzero value for convection tests.
@@ -118,19 +118,21 @@ Example logic for `0/T` (pseudocode):
    - Both U and DT nonzero (choose combinations to explore dominance)
    - Expectation: scalar is transported and also spreads; sharper fronts when convection dominates, smoother when diffusion dominates.
 
+### Parameter study
+
 | #  | **u** [m/s] | **D<sub>T</sub>** [m²/s] | **Transport equation** |
 |----|-------------|-------------------------|------------------------|
-| 1  | (0 0 0)     | 1e-6                    |                         |
+| 1  | (0 0 0)     | 1e-6                    |        "                 |
 | 2  | (0 0 0)     | 1e-4                    | ∂T/∂t = D<sub>T</sub> ∆T |
-| 3  | (0 0 0)     | 1e-2                    |                         |
-| 4  | (0 0 0)     | 1e0                     |                         |
-| 5  | (1 0 0)     | 0                       |                         |
+| 3  | (0 0 0)     | 1e-2                    |        "                 |
+| 4  | (0 0 0)     | 1e0                     |        "                |
+| 5  | (1 0 0)     | 0                       |        "                 |
 | 6  | (0.5 0 0)   | 0                       | ∂T/∂t + ∇·(uT) = 0      |
-| 7  | (2 0 0)     | 0                       |                         |
-| 8  | (1 0 0)     | 1e-6                    |                         |
+| 7  | (2 0 0)     | 0                       |         "                |
+| 8  | (1 0 0)     | 1e-6                    |         "              |
 | 9  | (1 0 0)     | 1e-4                    | ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T |
-| 10 | (1 0 0)     | 1e-2                    |                         |
-| 11 | (1 0 0)     | 1e0                     |                         |
+| 10 | (1 0 0)     | 1e-2                    |         "              |
+| 11 | (1 0 0)     | 1e0                     |         "                |
 
 ---
 

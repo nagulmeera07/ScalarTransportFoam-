@@ -131,8 +131,8 @@ Example logic for `0/T` (pseudocode):
 | 7  | (2 0 0)     | 0                       |  ∂T/∂t + ∇·(uT) = 0   |
 | 8  | (1 0 0)     | 1e-6                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆  |
 | 9  | (1 0 0)     | 1e-4                    | ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T |
-| 10 | (1 0 0)     | 1e-2                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆  |
-| 11 | (1 0 0)     | 1e0                     |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆|
+| 10 | (1 0 0)     | 1e-2                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T  |
+| 11 | (1 0 0)     | 1e0                     |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T|
 
 ---
 
@@ -166,6 +166,8 @@ Typical sequence (in your case folder):
 - For combined cases, observe both translation and spreading.
 - Use line plots in ParaView to see 1D profiles clearly.
 - When convection dominates, try higher-order convection schemes or limiters to reduce numerical oscillations or excessive numerical diffusion.
+
+
 
 ---
 

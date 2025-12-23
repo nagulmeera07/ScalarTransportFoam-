@@ -1,5 +1,11 @@
 # Parameter study on the Transport Equation
 
+- Clone the repository ' https://github.com/nagulmeera07/ScalarTransportFoam-.git ' in the run directory of openfoam.
+- open each case file then run scalarTransportFoam and make .foam.
+- open .foam file in paraview.
+- run remaining cases then open in same paraview layout by changing position of the each solution.
+- compare the solutions.
+
 ## Main Govering Equation ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T
 
 | Case No | **u** [m/s] | **D<sub>T</sub>** [m²/s] | **Transport equation** |

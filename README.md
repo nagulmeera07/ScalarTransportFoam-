@@ -134,6 +134,8 @@ Example logic for `0/T` (pseudocode):
 | 10 | (1 0 0)     | 1e-2                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T  |
 | 11 | (1 0 0)     | 1e0                     |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T|
 
+- This sequesce is followed in this repo. like scalarTransportFoam_1, scalarTransportFoam_2 upto scalarTransportFoam_11.
+
 ---
 
 ## How to run

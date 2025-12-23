@@ -120,6 +120,8 @@ Example logic for `0/T` (pseudocode):
 
 ### Parameter study
 
+ # Main Govering Equation ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T
+
 | Case No | **u** [m/s] | **D<sub>T</sub>** [m²/s] | **Transport equation** |
 |----|-------------|-------------------------|------------------------|
 | scalarTransportFoam_1 | (0 0 0)     | 1e-6                    |  ∂T/∂t = D<sub>T</sub> ∆T  |

@@ -120,19 +120,19 @@ Example logic for `0/T` (pseudocode):
 
 ### Parameter study
 
-| #  | **u** [m/s] | **D<sub>T</sub>** [m²/s] | **Transport equation** |
+| Case No | **u** [m/s] | **D<sub>T</sub>** [m²/s] | **Transport equation** |
 |----|-------------|-------------------------|------------------------|
-| 1  | (0 0 0)     | 1e-6                    |  ∂T/∂t = D<sub>T</sub> ∆T  |
-| 2  | (0 0 0)     | 1e-4                    | ∂T/∂t = D<sub>T</sub> ∆T |
-| 3  | (0 0 0)     | 1e-2                    | ∂T/∂t = D<sub>T</sub> ∆T  |
-| 4  | (0 0 0)     | 1e0                     |∂T/∂t = D<sub>T</sub> ∆T |
-| 5  | (1 0 0)     | 0                       |  ∂T/∂t + ∇·(uT) = 0     |
-| 6  | (0.5 0 0)   | 0                       | ∂T/∂t + ∇·(uT) = 0      |
-| 7  | (2 0 0)     | 0                       |  ∂T/∂t + ∇·(uT) = 0   |
-| 8  | (1 0 0)     | 1e-6                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆  |
-| 9  | (1 0 0)     | 1e-4                    | ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T |
-| 10 | (1 0 0)     | 1e-2                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T  |
-| 11 | (1 0 0)     | 1e0                     |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T|
+| scalarTransportFoam_1 | (0 0 0)     | 1e-6                    |  ∂T/∂t = D<sub>T</sub> ∆T  |
+| scalarTransportFoam_2 | (0 0 0)     | 1e-4                    | ∂T/∂t = D<sub>T</sub> ∆T |
+| scalarTransportFoam_3  | (0 0 0)     | 1e-2                    | ∂T/∂t = D<sub>T</sub> ∆T  |
+| scalarTransportFoam_4 | (0 0 0)     | 1e0                     |∂T/∂t = D<sub>T</sub> ∆T |
+| scalarTransportFoam_5| (1 0 0)     | 0                       |  ∂T/∂t + ∇·(uT) = 0     |
+| scalarTransportFoam_6  | (0.5 0 0)   | 0                       | ∂T/∂t + ∇·(uT) = 0      |
+| scalarTransportFoam_7| (2 0 0)     | 0                       |  ∂T/∂t + ∇·(uT) = 0   |
+| scalarTransportFoam_8 | (1 0 0)     | 1e-6                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆  |
+| scalarTransportFoam_9 | (1 0 0)     | 1e-4                    | ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T |
+| scalarTransportFoam_10 | (1 0 0)     | 1e-2                    |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T  |
+| scalarTransportFoam_11 | (1 0 0)     | 1e0                     |  ∂T/∂t + ∇·(uT) = D<sub>T</sub> ∆T|
 
 - This sequesce is followed in this repo. like scalarTransportFoam_1, scalarTransportFoam_2 upto scalarTransportFoam_11.
 
